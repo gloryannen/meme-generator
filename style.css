@@ -1,0 +1,134 @@
+html, body{
+  margin: 0;
+  width: 100%;
+  height:100%;
+  padding: 0;
+}
+
+body{
+  background-color: rgb(24, 24, 24);
+  background-size: 400% 400%;
+  color: rgb(245, 244, 244);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h3{
+  margin-top: 0;
+  text-align: center;
+  font-size: 2rem;
+}
+input{
+  display: flex;
+  min-width: 250px;
+  height: 25px;
+  font-size: large;
+  font-weight: bold;
+}
+/* form container */
+.container{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  padding: 30px;
+  background-color: rgb(19, 77, 100);
+  border-radius: 8px;
+}
+/* formtext */
+label{
+  font-size: 20px;
+  font-weight: bold;
+  color: whitesmoke;
+}
+.inputs{
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+}
+.submit {
+  margin-top: 2%;
+  display: block;
+  justify-content: center;
+  background-image: -webkit-linear-gradient(top, rgb(40, 93, 116), rgb(105, 174, 201));
+  height: 60px;
+  color: whitesmoke;
+  font-size: 23px;
+  box-shadow: 1px 1px 20px 0 #333333;
+  text-shadow: 1px -2px 20px #222222;
+  border: solid whitesmoke 0;
+  border-radius: 7px;
+  min-width: 250px;
+  cursor: pointer;
+
+}
+.submit:hover {
+   border: solid whitesmoke 0;
+   background-image: -webkit-linear-gradient(top, rgb(105, 174, 201), rgb(40, 93, 116));
+   border-radius: 7px;
+}
+/* images container */
+#galleryContainer{
+  display: inline-block;
+  align-content: center;
+}
+
+img{
+  object-fit: cover; 
+  max-width: 600px;
+  border-radius: 8px;
+  width: 300px;
+  height: 100%;
+}
+
+.overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(245, 222, 179, 0);
+  z-index: 3;
+  color: rgba(255, 255, 255, 0);
+}
+
+.overlay:hover{
+  background: rgba(105, 174, 201, 0.60);
+  color: red;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size:8rem;
+  border-radius: 8px;
+}
+
+.imgContainer {
+  position: relative;
+  display: inline-flex;
+  flex-wrap: wrap;
+  height: 100%;
+  margin: 4px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.topTxt, .botTxt {
+  position: absolute;
+  margin: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  overflow: hidden;
+  word-wrap: break-word;
+
+}
+.topTxt{
+  top: 0;
+}
+
+.botTxt{
+  bottom: 0;
+}

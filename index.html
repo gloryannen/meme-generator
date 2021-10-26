@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Meme Generator</title>
+</head>
+<body>
+  <div>
+    <h1>Glorious Memest Generator</h1>
+      <h3>Fill out the fields to create the BEST meme</h3>
+    <form class="container" id="form">
+      <div class="inputs">
+        <label>Insert image URL</label>
+        <input type="url" id="url" required><br>
+        <label>Top image text</label>
+        <input type="text" name="topImgText"><br>
+        <label>Bottom image text</label>
+        <input type="text" name="botImgText"> 
+      </div>
+      <input type="submit" id="submitBtn" class="submit" value="Generate meme">
+    </form>
+  </div>
+  <div id="galleryContainer">
+  </div>
+<script src="app.js"></script>
+</body>
+</html>
